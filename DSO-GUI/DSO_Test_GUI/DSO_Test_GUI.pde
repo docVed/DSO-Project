@@ -68,7 +68,7 @@ void setup()
 
   // Open USBDSO port
   String portList = Serial.list()[1];
-  USBDSOPort = new Serial(this, portList, 38400);
+  USBDSOPort = new Serial(this, portList, 19200);
   background(255);
   USBDSOPort.write('v');
   USBDSOPort.write('r');
